@@ -1,6 +1,8 @@
 import react, { Component } from 'react';
 import './App.css';
 import Buscador from './componentes/Buscador';
+import Resultado from './componentes/Resultado';
+
 
 class  App extends Component {
 
@@ -38,7 +40,11 @@ datosBusqueda=(termino)=>{
     />
     
     </div>
+    <Resultado
+    imagenes={this.state.imagenes}
+    />
     
+
     </div>
   );
 }
